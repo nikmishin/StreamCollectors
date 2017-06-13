@@ -50,7 +50,7 @@ class StdOutListener(StreamListener):
             tweet['place_box_coordinates'] = None
 
         if status.coordinates and status.lang=="en":
-            #fdjlkfdjlprint(tweet)
+            #print(tweet)
             collection.insert_one(tweet)
 
         return True
